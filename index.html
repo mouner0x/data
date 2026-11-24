@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shop Now</title>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+    background:#F2E7DA;
+    color:#3E2418;
+    min-height:100vh;
+    min-height:100svh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:24px;
+  }
+  .box{width:100%;max-width:420px;text-align:center}
+
+  .badge{
+    display:inline-block;
+    background:#A3CBFF;
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:.5px;
+    padding:6px 14px;
+    border-radius:20px;
+    margin-bottom:16px;
+  }
+  h1{font-size:30px;font-weight:800;line-height:1.2;margin-bottom:10px}
+  .sub{font-size:15px;line-height:1.5;opacity:.8;margin-bottom:24px}
+
+  .btn{
+    display:block;
+    padding:18px;
+    background:#3E2418;
+    color:#F2E7DA;
+    font-size:17px;
+    font-weight:700;
+    text-decoration:none;
+    letter-spacing:1px;
+    border-radius:10px;
+    transition:transform .1s;
+  }
+  .btn:active{transform:scale(.98)}
+
+  .trust{display:flex;gap:10px;margin-top:20px}
+  .trust > div{
+    flex:1;
+    background:#fff;
+    border:1.5px solid #A3CBFF;
+    border-radius:10px;
+    padding:14px 6px;
+    font-size:13px;
+    font-weight:700;
+  }
+  .trust .ic{
+    width:36px;height:36px;
+    margin:0 auto 8px;
+    border-radius:50%;
+    background:#A3CBFF;
+    display:flex;align-items:center;justify-content:center;
+  }
+  .trust svg{width:20px;height:20px;display:block}
+
+  .pay-title{margin-top:22px;font-size:12px;font-weight:600;opacity:.7}
+  .pay{display:flex;gap:6px;margin-top:10px}
+  .pay span{
+    flex:1;height:40px;
+    padding:0 4px;white-space:nowrap;
+    background:#fff;
+    border:1px solid #E0D0BE;
+    border-radius:6px;
+    display:flex;align-items:center;justify-content:center;
+    font-size:11px;font-weight:800;
+  }
+  .pay img{max-height:24px;max-width:56px}
+</style>
+</head>
+<body>
+  <div class="box">
+    <span class="badge">NEXT-DAY DELIVERY</span>
+    <h1>Order today,<br>get it tomorrow.</h1>
+    <p class="sub">Fast shipping to your door, with a checkout you can trust.</p>
+
+    <!-- غيّر الرابط -->
+    <a class="btn" href="https://www.munnchies.co.uk/">SHOP NOW</a>
+
+    <div class="trust">
+      <div>
+        <div class="ic">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#3E2418" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="1" y="6" width="13" height="10" rx="1"/>
+            <path d="M14 9h4l3 3v4h-7z"/>
+            <circle cx="6" cy="18" r="2" fill="#fff"/>
+            <circle cx="17" cy="18" r="2" fill="#fff"/>
+          </svg>
+        </div>
+        Fast Delivery
+      </div>
+      <div>
+        <div class="ic">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#3E2418" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="5" y="11" width="14" height="10" rx="2"/>
+            <path d="M8 11V8a4 4 0 0 1 8 0v3"/>
+          </svg>
+        </div>
+        Secure Payments
+      </div>
+    </div>
+
+    <div class="pay-title">We accept</div>
+    <!-- حط ملفات اللوجو الرسمية جنب الصفحة بالأسماء دي، ولو مش موجودة هيظهر اسم الوسيلة مكانها -->
+    <div class="pay">
+      <span><img src="applepay.svg" alt="Apple Pay" onerror="this.replaceWith('Apple Pay')"></span>
+      <span><img src="googlepay.svg" alt="Google Pay" onerror="this.replaceWith('Google Pay')"></span>
+      <span style="color:#1A1F71;font-style:italic"><img src="visa.svg" alt="Visa" onerror="this.replaceWith('VISA')"></span>
+      <span><img src="mastercard.svg" alt="Mastercard" onerror="this.replaceWith('Mastercard')"></span>
+    </div>
+  </div>
+</body>
+</html>
